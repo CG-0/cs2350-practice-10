@@ -83,7 +83,7 @@ function displayCards() {
     btn.onclick = function (event) {
       if (confirm("Are you sure you want to delete this card?")) {
         cards.splice(event.target.closest(".col").dataset.ndx, 1)
-        localStorage.setItem("card", JSON.stringify(cards))
+        localStorage.setItem("cards", JSON.stringify(cards))
         displayCards()
       }
     }
